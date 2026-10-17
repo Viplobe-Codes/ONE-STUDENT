@@ -1,9 +1,8 @@
 /* Edit this configuration to add real, brand-specific links and work. Keep URLs empty until they are ready to publish. */
 const siteConfig = {
   links: {
-    instagram: "",
-    email: "",
-    github: "",
+    instagram: "https://www.instagram.com/i_wanna.work/",
+    email: "rsharma.gmc@gmail.com",
     other: []
   },
   projects: [],
