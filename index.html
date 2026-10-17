@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0a09">
+  <meta name="description" content="A small digital space for big ideas, practical projects, creative experiments, and the journey of building something from nothing.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ONE STUDENT — One Student. Endless Possibilities.">
+  <meta property="og:description" content="Learn, build, share, and help others along the way.">
+  <meta property="og:site_name" content="ONE STUDENT">
+  <title>ONE STUDENT — One Student. Endless Possibilities.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="One Student, home"><span class="prompt">&gt;_</span><span>One Student</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-mark" aria-hidden="true"><span>&gt;_</span><span>&lt;/&gt;</span><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="2"/><path d="M5 17c.7-2 2-3 3-3s2.3 1 3 3M14 7h4M14 11h4M14 15h4"/></svg></div>
+      <p class="status"><span class="status-dot"></span>$ status: building_in_public</p>
+      <h1 id="hero-title">One Student.<br class="mobile-break"> Endless Possibilities.</h1>
+      <p class="hero-copy">A small digital space for big ideas, practical projects, creative experiments, and the journey of building something from nothing.</p>
+      <p class="type-line"><span id="typed-text">const ideas = build();</span><span class="cursor" aria-hidden="true">|</span><span class="sr-only" id="type-description">A rotating set of short notes about learning and making.</span></p>
+      <div class="hero-actions"><a class="button button-primary" href="#projects">Explore Projects <span aria-hidden="true">↘</span></a><a class="button button-outline" href="#contact">Get in Touch</a></div>
+      <div class="social-row" id="hero-socials" aria-label="Brand social links"></div>
+    </section>
+
+    <section class="content-section" id="about">
+      <p class="section-kicker">01 / About</p><h2>Not a big company.<br>Just a mindset.</h2>
+      <p class="section-copy">One Student is an independent digital initiative built around curiosity, experimentation, and the belief that you don't need everything figured out to start creating.<br><br>Here, ideas turn into projects, skills grow through practice, and small steps become meaningful progress.<br><br>The goal is simple: learn, build, share, and help others along the way.</p>
+    </section>
+
+    <section class="content-section" id="projects">
+      <p class="section-kicker">02 / Selected work</p><h2>Projects</h2>
+      <p class="section-copy section-intro">Experiments and useful things, made one step at a time.</p>
+      <div class="project-grid" id="project-list" aria-live="polite"></div>
+    </section>
+
+    <section class="content-section" id="services">
+      <p class="section-kicker">03 / What I can help with</p><h2>Small ideas.<br>Useful execution.</h2>
+      <p class="section-copy section-intro">Practical creative and technical help, offered with an open mind and a learning mindset.</p>
+      <div class="service-list" id="service-list"></div>
+    </section>
+
+    <section class="content-section principles" id="principles">
+      <p class="section-kicker">04 / The point of it</p><h2>What this stands for</h2>
+      <div class="principle-list"><p><span>01</span>Learn by building.</p><p><span>02</span>Create with what you have.</p><p><span>03</span>Improve one step at a time.</p></div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+      <p class="section-kicker">05 / Contact</p><h2>Have an idea?<br>Let's build something.</h2>
+      <p class="section-copy">For project questions, collaborations, or just to say hello.</p>
+      <div class="contact-links" id="contact-links"></div>
+      <p class="contact-note" id="contact-note">Brand links will appear here once configured.</p>
+    </section>
+  </main>
+
+  <footer><span>ONE STUDENT © <span id="year"></span></span><span>Built with curiosity. Powered by consistency.</span></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
