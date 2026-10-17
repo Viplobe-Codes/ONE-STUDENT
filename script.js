@@ -30,11 +30,12 @@ const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({
 
 function safeUrl(value, allowMail = false) {
   if (typeof value !== "string" || !value.trim()) return "";
+  if (allowMail && /^mailto:[^\s@]+@[^\s@]+\.[^\s@]+$/i.test(value)) return value;
   try {
     const url = new URL(value);
     if (url.protocol === "https:" || url.protocol === "http:") return url.href;
-  } catch (_) {
-    if (allowMail && /^mailto:[^\s@]+@[^\s@]+\.[^\s@]+$/i.test(value)) return value;
+  } catch (error) {
+    if (!(error instanceof TypeError)) throw error;
   }
   return "";
 }
